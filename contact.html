@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- The header is necessry for us to separete from the rest of the main text -->
+    <header>
+      <!-- we used nav becuase it's where we navigate the pages -->
+      <nav>
+        <!-- here we use "ul" because the ordem of the itens doesn't matter for us, it's just the order that I want it -->
+        <ul>
+          <!-- we use li for each item of the list -->
+          <!-- inside of it we have the tag "a" that we use to go to a diferent page  -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li style="position: relative">
+            <img
+              src="images/shopping-cart.webp"
+              alt="shopping-cart"
+              height="30px"
+            />
+            <span id="cart-quantity">0</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- We use the main because it's the main subject of the page -->
+    <main>
+      <!-- Divide in sections to group in to sections   -->
+      <!-- we used the tag "id" so we can call it on css to alter it -->
+      <section id="contact">
+        <!-- h1 we use for the principal title of the page (we use just once per page) -->
+        <h1>Contact Us</h1>
+        <!-- Here we use form becuase we want to create a form for them to complete -->
+        <form id="contact-form">
+          <!-- we divide in divs all each block of the form -->
+          <div>
+            <label for="name">Name:</label>
+            <!--  here we use pattern to only letters and space and the name has to be at least 3 letters -->
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Full name"
+              pattern="[A-Za-z ]{3,}"
+              title="Only letters are allowed"
+            />
+          </div>
+          <div>
+            <!-- here we put the quantity of numbers that we want in the pattern -->
+            <label for="phone">Phone number:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              required
+              pattern="\d{9,10}"
+              placeholder="Just numbers"
+              title="Just numbers, 9 or 10 digits only"
+            />
+          </div>
+          <div>
+            <!-- used the type email here because it already gives me the try error for types of email like @ and . -->
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="e-mail"
+              name="email"
+              required
+              placeholder="Your e-mail"
+            />
+          </div>
+
+          <div>
+            <!-- here we use a textare because we want the user to put their objectives and writes their questions -->
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Describe you objectives or you write your doubt"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <!-- check box for the user to allow us to use their information -->
+            <label for="agree">I agree to the terms with term and use</label>
+            <input type="checkbox" id="agree" name="terms" required />
+          </div>
+
+          <div><button type="submit">Send</button></div>
+        </form>
+      </section>
+    </main>
+    <!--footer it's used for the bottom part of the page  -->
+    <footer>
+      <!-- https://blog.hubspot.com/website/html-code-copyright#:~:text=To%20add%20a%20copyright%20symbol,it%20appear%20on%20a%20page.
+       above we have the web page that I use the discover how to put the c in a circle "&copy;" -->
+      <p>&copy; Publio CrossFit Gear and Coaching. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

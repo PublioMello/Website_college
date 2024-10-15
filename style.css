@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*used to remove default margin and padding from all elements, and ensures 
+   that the width and height properties include the padding and border. */
+}
+#main body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+  /* this is the set because it readeble font and the spacing makes more readeble in the whole page we also only wanted to put this in the main */
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  /* Adds the color and fix the padding inside of the header to all of the pages */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /* Removes bullet points from the list, makes the list items
+ display in a row, and evenly spaces them horizontally. */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  /* This is the set because we set the navigation links white for visiblity giving a good contrast on the dark backgroung
+we also don't want the underline */
+}
+
+#hero {
+  background: url("images/crossfit-hero.jpg") no-repeat center center/cover;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Choose to put a image of the background becuase its easy to see the 2 main products the we sell in the site
+ the coaching and the tshirt */
+}
+
+#hero h1 {
+  font-size: 8rem;
+  color: white; /* Text color */
+  -webkit-text-stroke: 2px black; /* 2px black stroke around the text */
+  /* we try to use outline beacuse just in colors didn't allow to it clear  */
+}
+
+#hero p {
+  font-size: 40px;
+  color: white; /* Text color */
+  -webkit-text-stroke: 2px black; /* 2px black stroke around the text */
+  font-size: 40px; /* Font size for visibility */
+  /* similiar thing from the hero h1 we use it to give more visibility */
+}
+#hero a {
+  font-size: 30px;
+  color: white; /* Text color */
+  -webkit-text-stroke: 2px black; /* 2px black stroke around the text */
+  font-size: 40px; /* Font size for visibility */
+  /* similiar thing from the hero h1 we use it to give more visibility */
+}
+
+#featured-products {
+  padding: 20px;
+  text-align: center;
+  /*Wanted the products centralized so it be easier to see all of them at once  */
+}
+
+.product img {
+  max-width: 100%;
+  /*  */
+}
+
+.product {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  /* display the products as an inline-block element and set the margin
+  and align */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* style the background of my footer  */
+}
+button {
+  cursor: pointer;
+  /* just to know that the pointer is on top of the button */
+}
+#about-us,
+#coaching {
+  height: 90vh;
+  /* to put the footer in the end of the page */
+}
+#about-us p,
+h1 {
+  text-align: left;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  right: 0px;
+  margin-block-end: 0.83mm;
+  max-width: 100ch;
+  /* we want the text align in the left with a good distance between them to make easy to read  */
+}
+
+#cart-quantity {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #333;
+  color: white;
+  padding: 4px 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  /* we want to make the cart with the number of tshirts in there, so we have to put a bakcgorund to make easy to see
+  and in a better position so we can also see the cart */
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  width: 300px;
+  margin: 0 auto;
+  height: 85vh;
+  /* we choose this to put this in a column so it looks more professional
+  also giving space so the footer be in th end of the page */
+}
+/* add spaces between esch box */
+label,
+input,
+textarea {
+  margin-bottom: 10px;
+}
+/* use this to conform the table in the website and looks more professional
+testing different types until find this one */
+input,
+textarea {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.checkbox {
+  display: flex;
+  align-items: center; /* Aligns the checkbox and label vertically */
+}
+
+.checkbox label {
+  margin-left: 10px; /* Adds space between the checkbox and the label */
+}
